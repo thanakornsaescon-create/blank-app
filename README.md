@@ -9,7 +9,17 @@ A simple Streamlit app template for you to modify!
 1. Install the requirements
 
    ```
-   $ pip install -r requirements.txt
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+# source .venv/bin/activate
+
+pip install -U pip
+pip install streamlit numpy pandas matplotlib statsmodels pmdarima openpyxl
+# (เลือกติดตั้ง prophet เพิ่มได้ ถ้าลงสำเร็จ)
+# pip install prophet
+
    ```
 
 2. Run the app
